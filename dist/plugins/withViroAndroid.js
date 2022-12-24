@@ -84,7 +84,7 @@ const withViroProjectBuildGradle = (config) => (0, config_plugins_1.withProjectB
     newConfig.modResults.contents = newConfig.modResults.contents.replace(/minSdkVersion.*/, `minSdkVersion = 24`);
     newConfig.modResults.contents = newConfig.modResults.contents.replace(/classpath\("com.android.tools.build:gradle.*/, `classpath('com.android.tools.build:gradle:4.1.1')`);
     newConfig.modResults.contents = newConfig.modResults.contents.replace(/repositories \{/g, `repositories {
-                jcenter()`);
+        jcenter()`);
     return newConfig;
 });
 const withViroAppBuildGradle = (config) => (0, config_plugins_1.withAppBuildGradle)(config, async (config) => {
