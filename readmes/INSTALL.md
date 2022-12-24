@@ -9,13 +9,13 @@ The steps below are for manually installing and linking the library to an existi
 #### NPM 
 
 ```console
-$ npm install --save @viro-community/react-viro
+$ equationalapplications/viro#react-18
 ```
 
 #### Yarn
 
 ```console
-$ yarn add @viro-community/react-viro
+$ yarn add equationalapplications/viro#react-18
 ```
 
 ## Linking (You _must_ do this - we do not support auto-linking)
