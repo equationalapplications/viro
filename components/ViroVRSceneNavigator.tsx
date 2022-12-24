@@ -17,7 +17,7 @@ import {
   NativeSyntheticEvent,
   requireNativeComponent,
   StyleSheet,
-  ViewProps,
+  
 } from "react-native";
 import { ViroExitViroEvent } from "./Types/ViroEvents";
 import {
@@ -36,7 +36,7 @@ type State = {
 
 var mathRandomOffset = 0;
 
-type Props = ViewProps & {
+type Props = {
   /**
    * Calling vrModeEnabled allows switching to and from VR mode.
    * When set to false, it transitions back to pre-VR (mono) mode.

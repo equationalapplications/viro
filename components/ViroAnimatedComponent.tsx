@@ -15,7 +15,7 @@ import * as React from "react";
 import {
   NativeSyntheticEvent,
   requireNativeComponent,
-  ViewProps,
+  
 } from "react-native";
 import {
   ViroAnimatedComponentFinishEvent,
@@ -23,7 +23,7 @@ import {
 } from "./Types/ViroEvents";
 import { ViroNativeRef } from "./Types/ViroUtils";
 
-type Props = ViewProps & {
+type Props = {
   animation: string;
   delay: number;
   loop: boolean;

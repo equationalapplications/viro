@@ -16,7 +16,7 @@ import {
   NativeModules,
   requireNativeComponent,
   StyleSheet,
-  ViewProps,
+  
 } from "react-native";
 import { ViroExitViroEvent } from "./Types/ViroEvents";
 import {
@@ -29,7 +29,7 @@ const Viro3DSceneNavigatorModule = NativeModules.VRT3DSceneNavigatorModule;
 
 var mathRandomOffset = 0;
 
-type Props = ViewProps & {
+type Props = {
   /**
    * initial scene key
    *

@@ -12,10 +12,10 @@
 "use strict";
 
 import * as React from "react";
-import { ViewProps } from "react-native";
+
 import { ViroCamera } from "../ViroCamera";
 
-export class ViroARCamera extends React.Component<ViewProps> {
+export class ViroARCamera extends React.Component<any> {
   _component: ViroCamera | null = null;
 
   render() {

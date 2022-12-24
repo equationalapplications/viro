@@ -13,7 +13,7 @@ import {
   NativeSyntheticEvent,
   Platform,
   requireNativeComponent,
-  ViewProps,
+  
 } from "react-native";
 import {
   ViroErrorEvent,
@@ -23,7 +23,7 @@ import {
 } from "./Types/ViroEvents";
 import { ViroNativeRef } from "./Types/ViroUtils";
 
-type Props = ViewProps & {
+type Props = {
   material?: string;
   paused?: boolean;
   loop?: boolean;

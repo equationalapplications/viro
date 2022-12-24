@@ -1,8 +1,8 @@
 import * as React from "react";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
+import { NativeSyntheticEvent } from "react-native";
 import { ViroLoadEndEvent, ViroLoadErrorEvent, ViroLoadStartEvent } from "./Types/ViroEvents";
 import { ViroNativeRef, ViroSource } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     /**
      * The hdr image file, which is required
      */

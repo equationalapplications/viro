@@ -1,8 +1,8 @@
 import { ViroAnimation } from "../Animation/ViroAnimations";
 import { ViroAnchor, ViroAnchorFoundMap, ViroAnchorUpdatedMap, ViroClickState, ViroErrorEvent, ViroPinchState, ViroRotateState } from "../Types/ViroEvents";
 import { ViroPhysicsBody, Viro3DPoint, ViroRotation, ViroScale, ViroSource } from "../Types/ViroUtils";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
-export declare type ViroCommonProps = ViewProps & {
+import { NativeSyntheticEvent } from "react-native";
+export declare type ViroCommonProps = {
     target?: string;
     pauseUpdates?: boolean;
     renderingOrder?: number;

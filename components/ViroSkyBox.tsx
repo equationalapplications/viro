@@ -16,7 +16,7 @@ import {
   ColorValue,
   NativeSyntheticEvent,
   requireNativeComponent,
-  ViewProps,
+  
 } from "react-native";
 // @ts-ignore
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
@@ -25,7 +25,7 @@ import { ViroLoadEndEvent, ViroLoadStartEvent } from "./Types/ViroEvents";
 import { ViroNativeRef } from "./Types/ViroUtils";
 import { checkMisnamedProps } from "./Utilities/ViroProps";
 
-type Props = ViewProps & {
+type Props = {
   source?: ViroCubeMap;
   color?: ColorValue;
   format?: "RGBA8" | "RGB565";

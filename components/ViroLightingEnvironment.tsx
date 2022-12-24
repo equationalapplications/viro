@@ -15,7 +15,7 @@ import * as React from "react";
 import {
   NativeSyntheticEvent,
   requireNativeComponent,
-  ViewProps,
+  
 } from "react-native";
 // @ts-ignore
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
@@ -27,7 +27,7 @@ import {
 import { ViroNativeRef, ViroSource } from "./Types/ViroUtils";
 import { checkMisnamedProps } from "./Utilities/ViroProps";
 
-type Props = ViewProps & {
+type Props = {
   /**
    * The hdr image file, which is required
    */

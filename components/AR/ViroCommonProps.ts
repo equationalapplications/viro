@@ -15,9 +15,9 @@ import {
   ViroScale,
   ViroSource,
 } from "../Types/ViroUtils";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
+import { NativeSyntheticEvent } from "react-native";
 
-export type ViroCommonProps = ViewProps & {
+export type ViroCommonProps = {
   target?: string;
 
   pauseUpdates?: boolean;

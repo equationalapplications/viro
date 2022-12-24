@@ -1,8 +1,8 @@
 import * as React from "react";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
+import { NativeSyntheticEvent } from "react-native";
 import { ViroErrorEvent, ViroSoundFinishEvent } from "./Types/ViroEvents";
 import { ViroNativeRef, ViroSoundMap, ViroSoundPreloadResult, ViroSource } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     source: ViroSource;
     paused?: boolean;
     loop?: boolean;

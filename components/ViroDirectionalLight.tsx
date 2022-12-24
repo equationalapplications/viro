@@ -12,10 +12,10 @@
 "use strict";
 
 import * as React from "react";
-import { ColorValue, requireNativeComponent, ViewProps } from "react-native";
+import { ColorValue, requireNativeComponent } from "react-native";
 import { ViroNativeRef, Viro3DPoint } from "./Types/ViroUtils";
 
-type Props = ViewProps & {
+type Props = {
   color?: ColorValue;
   intensity?: number;
   temperature?: number;

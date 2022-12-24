@@ -1,8 +1,8 @@
 import * as React from "react";
-import { ImageSourcePropType, NativeSyntheticEvent, ViewProps } from "react-native";
+import { ImageSourcePropType, NativeSyntheticEvent } from "react-native";
 import { ViroLoadEndEvent, ViroLoadErrorEvent, ViroLoadStartEvent } from "./Types/ViroEvents";
 import { ViroNativeRef, ViroRotation } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     /**
      * The image file, which is required
      */

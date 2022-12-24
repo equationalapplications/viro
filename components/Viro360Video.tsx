@@ -17,7 +17,7 @@ import {
   NativeSyntheticEvent,
   Platform,
   requireNativeComponent,
-  ViewProps,
+  
 } from "react-native";
 
 // @ts-ignore
@@ -33,7 +33,7 @@ import { checkMisnamedProps } from "./Utilities/ViroProps";
 
 var NativeModules = require("react-native").NativeModules;
 
-type Props = ViewProps & {
+type Props = {
   source: ViroSource;
   rotation?: ViroRotation;
   paused?: boolean;

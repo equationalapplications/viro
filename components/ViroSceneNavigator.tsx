@@ -18,7 +18,7 @@ import {
   StyleSheet,
   View,
   NativeModules,
-  ViewProps,
+  
   NativeSyntheticEvent,
 } from "react-native";
 import { ViroExitViroEvent } from "./Types/ViroEvents";
@@ -29,7 +29,7 @@ var ViroSceneNavigatorModule = NativeModules.VRTSceneNavigatorModule;
 
 var mathRandomOffset = 0;
 
-type Props = ViewProps & {
+type Props = {
   initialSceneKey?: string;
   /**
    * Calling vrModeEnabled allows switching to and from VR mode.

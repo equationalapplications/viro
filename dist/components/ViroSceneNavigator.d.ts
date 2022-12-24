@@ -1,10 +1,10 @@
 import * as React from "react";
-import { ViewProps, NativeSyntheticEvent } from "react-native";
+import {  NativeSyntheticEvent } from "react-native";
 import { ViroExitViroEvent } from "./Types/ViroEvents";
 import { Viro3DPoint } from "./Types/ViroUtils";
 import { ViroSceneDictionary } from "./Types/ViroUtils";
 import { ViroScene } from "./ViroScene";
-declare type Props = ViewProps & {
+declare type Props = {
     initialSceneKey?: string;
     /**
      * Calling vrModeEnabled allows switching to and from VR mode.

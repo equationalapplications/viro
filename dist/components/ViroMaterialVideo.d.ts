@@ -7,10 +7,10 @@
  * of patent rights can be found in the PATENTS file in the same directory.
  */
 import * as React from "react";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
+import { NativeSyntheticEvent } from "react-native";
 import { ViroErrorEvent, ViroVideoBufferEndEvent, ViroVideoBufferStartEvent, ViroVideoUpdateTimeEvent } from "./Types/ViroEvents";
 import { ViroNativeRef } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     material?: string;
     paused?: boolean;
     loop?: boolean;

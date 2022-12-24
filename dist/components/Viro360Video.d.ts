@@ -1,8 +1,8 @@
 import * as React from "react";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
+import { NativeSyntheticEvent } from "react-native";
 import { ViroVideoBufferEndEvent, ViroVideoBufferStartEvent, ViroVideoErrorEvent, ViroVideoUpdateTimeEvent } from "./Types/ViroEvents";
 import { ViroNativeRef, ViroRotation, ViroSource } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     source: ViroSource;
     rotation?: ViroRotation;
     paused?: boolean;

@@ -10,10 +10,10 @@
  * @flow
  */
 import * as React from "react";
-import { ViewProps } from "react-native";
+
 import { ViroWorldOrigin } from "../Types/ViroEvents";
 import { Viro3DPoint, ViroNativeRef, ViroScene, ViroSceneDictionary } from "../Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     /**
      * ViroARSceneNavigator uses "scene" objects like the following to
      * describe a scene.

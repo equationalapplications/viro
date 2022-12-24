@@ -12,12 +12,12 @@
 "use strict";
 
 import * as React from "react";
-import { requireNativeComponent, ViewProps } from "react-native";
+import { requireNativeComponent } from "react-native";
 import { ViroAnimation } from "./Animation/ViroAnimations";
 import { Viro3DPoint, ViroNativeRef } from "./Types/ViroUtils";
 import { ViroSceneContext } from "./ViroSceneContext";
 
-export type Props = ViewProps & {
+export type Props = {
   position?: Viro3DPoint;
   focalPoint?: Viro3DPoint;
   active: boolean;

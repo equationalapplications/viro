@@ -10,11 +10,11 @@
  * @flow
  */
 import * as React from "react";
-import { ViewProps } from "react-native";
+
 import { ViroExitViroEvent } from "./Types/ViroEvents";
 import { ViroNativeRef, Viro3DPoint, ViroSceneDictionary } from "./Types/ViroUtils";
 import { ViroScene } from "./ViroScene";
-declare type Props = ViewProps & {
+declare type Props = {
     /**
      * initial scene key
      *

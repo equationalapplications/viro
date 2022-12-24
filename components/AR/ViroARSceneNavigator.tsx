@@ -18,7 +18,7 @@ import {
   NativeModules,
   requireNativeComponent,
   StyleSheet,
-  ViewProps,
+  
 } from "react-native";
 import { ViroWorldOrigin } from "../Types/ViroEvents";
 import {
@@ -32,7 +32,7 @@ const ViroARSceneNavigatorModule = NativeModules.VRTARSceneNavigatorModule;
 
 var mathRandomOffset = 0;
 
-type Props = ViewProps & {
+type Props = {
   /**
    * ViroARSceneNavigator uses "scene" objects like the following to
    * describe a scene.

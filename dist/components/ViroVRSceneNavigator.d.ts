@@ -10,7 +10,7 @@
  * @flow
  */
 import * as React from "react";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
+import { NativeSyntheticEvent } from "react-native";
 import { ViroExitViroEvent } from "./Types/ViroEvents";
 import { Viro3DPoint, ViroNativeRef, ViroScene, ViroSceneDictionary } from "./Types/ViroUtils";
 declare type State = {
@@ -18,7 +18,7 @@ declare type State = {
     sceneHistory: string[];
     currentSceneIndex: number;
 };
-declare type Props = ViewProps & {
+declare type Props = {
     /**
      * Calling vrModeEnabled allows switching to and from VR mode.
      * When set to false, it transitions back to pre-VR (mono) mode.

@@ -1,7 +1,7 @@
 import * as React from "react";
-import { ColorValue, ViewProps } from "react-native";
+import { ColorValue } from "react-native";
 import { ViroNativeRef, Viro3DPoint } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     color?: ColorValue;
     intensity?: number;
     temperature?: number;

@@ -18,7 +18,7 @@ import {
   NativeSyntheticEvent,
   Platform,
   requireNativeComponent,
-  ViewProps,
+  
 } from "react-native";
 // @ts-ignore
 import resolveAssetSource from "react-native/Libraries/Image/resolveAssetSource";
@@ -33,7 +33,7 @@ import { checkMisnamedProps } from "./Utilities/ViroProps";
 
 const SoundModule = NativeModules.VRTSoundModule;
 
-type Props = ViewProps & {
+type Props = {
   // Source can either be a String referencing a preloaded file, a web uri, or a
   // local js file (using require())
   source: ViroSource;

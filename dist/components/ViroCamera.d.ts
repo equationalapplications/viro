@@ -10,10 +10,10 @@
  * @flow
  */
 import * as React from "react";
-import { NativeSyntheticEvent, ViewProps } from "react-native";
+import { NativeSyntheticEvent } from "react-native";
 import { ViroAnimationFinishEvent, ViroAnimationStartEvent } from "./Types/ViroEvents";
 import { Viro3DPoint, ViroRotation } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     position?: Viro3DPoint;
     rotation?: ViroRotation;
     active: boolean;

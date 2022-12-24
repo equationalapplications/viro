@@ -14,7 +14,7 @@ import * as React from "react";
 import {
   NativeSyntheticEvent,
   requireNativeComponent,
-  ViewProps,
+  
 } from "react-native";
 import {
   ViroAnimationFinishEvent,
@@ -23,7 +23,7 @@ import {
 import { Viro3DPoint, ViroRotation } from "./Types/ViroUtils";
 import { ViroSceneContext } from "./ViroSceneContext";
 
-type Props = ViewProps & {
+type Props = {
   position?: Viro3DPoint;
   rotation?: ViroRotation;
   active: boolean;

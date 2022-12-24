@@ -1,9 +1,9 @@
 import * as React from "react";
-import { ColorValue, NativeSyntheticEvent, ViewProps } from "react-native";
+import { ColorValue, NativeSyntheticEvent } from "react-native";
 import { ViroCubeMap } from "./Material/ViroMaterials";
 import { ViroLoadEndEvent, ViroLoadStartEvent } from "./Types/ViroEvents";
 import { ViroNativeRef } from "./Types/ViroUtils";
-declare type Props = ViewProps & {
+declare type Props = {
     source?: ViroCubeMap;
     color?: ColorValue;
     format?: "RGBA8" | "RGB565";
