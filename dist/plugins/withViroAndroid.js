@@ -83,6 +83,8 @@ const withBranchAndroid = (config, props) => {
 const withViroProjectBuildGradle = (config) => (0, config_plugins_1.withProjectBuildGradle)(config, async (newConfig) => {
     newConfig.modResults.contents = newConfig.modResults.contents.replace(/minSdkVersion.*/, `minSdkVersion = 24`);
     newConfig.modResults.contents = newConfig.modResults.contents.replace(/classpath\("com.android.tools.build:gradle.*/, `classpath('com.android.tools.build:gradle:4.1.1')`);
+    newConfig.modResults.contents = newConfig.modResults.contents.replace(/repositories \{/g, `repositories {
+                jcenter()`);
     return newConfig;
 });
 const withViroAppBuildGradle = (config) => (0, config_plugins_1.withAppBuildGradle)(config, async (config) => {
@@ -112,7 +114,7 @@ const withViroManifest = (config) => (0, config_plugins_1.withAndroidManifest)(c
     contents?.manifest?.application?.[0]["meta-data"]?.push({
         $: {
             "android:name": "com.google.ar.core",
-            "android:value": "optional",
+            "android:value": "required",
         },
     });
     if (viroPluginConfig.includes("GVR") ||
